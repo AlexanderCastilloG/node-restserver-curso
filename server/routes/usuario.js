@@ -10,11 +10,11 @@ const app = express();
 
 app.get('/usuario', verificaToken  ,function (req, res) {
 
-    return res.json({
-        usuario: req.usuario,
-        nombre: req.usuario.nombre,
-        email: req.usuario.email
-    })
+    // return res.json({
+    //     usuario: req.usuario,
+    //     nombre: req.usuario.nombre,
+    //     email: req.usuario.email
+    // })
     
     //skip ->para saltar de 5 a 5 registros
     let desde = req.query.desde || 0;
